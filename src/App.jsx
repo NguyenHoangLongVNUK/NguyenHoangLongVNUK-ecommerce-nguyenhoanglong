@@ -11,7 +11,6 @@ function App() {
       <Header />
       <Switch>
         <Redirect from="/home" to="/" exact />
-
         <Route path="/" component={HomeFeature} exact />
         <Route path="/products" component={ProductFeature} />
         <Route component={NotFound} />
