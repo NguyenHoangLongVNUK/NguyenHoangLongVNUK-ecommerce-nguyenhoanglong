@@ -23,7 +23,7 @@ import Register from '../../features/Auth/components/Register/Register';
 import { logout } from '../../features/Auth/userSlice';
 
 const useStyles = makeStyles((theme) => ({
-    grow: {
+    grow: { 
         flexGrow: 1,
     },
     menuButton: {
