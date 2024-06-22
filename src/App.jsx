@@ -14,6 +14,7 @@ function App() {
         <Route path="/" component={HomeFeature} exact />
         <Route path="/products" component={ProductFeature} />
         <Route component={NotFound} />
+        
       </Switch>
     </>
   );
