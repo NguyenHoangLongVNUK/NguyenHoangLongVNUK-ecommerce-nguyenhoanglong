@@ -14,6 +14,7 @@ ReactDOM.render(
       <BrowserRouter>
         <SnackbarProvider anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
           <App />
+          
         </SnackbarProvider>
       </BrowserRouter>
     </Provider>
