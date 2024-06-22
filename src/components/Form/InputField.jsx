@@ -9,7 +9,7 @@ const InputField = (props) => {
     const hasError = errors[name];
     return (
         <>
-            <Controller
+            <Controller 
                 render={({ field }) =>
                     <TextField
                         {...register(name)}
