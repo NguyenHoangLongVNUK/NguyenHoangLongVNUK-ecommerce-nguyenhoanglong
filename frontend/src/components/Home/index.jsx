@@ -60,7 +60,7 @@ function Home() {
                         </div>
 
                         <div className={s.section}>
-                            <h5>Điện thoại</h5>
+                            <h5>Điện thoại 1</h5>
                             <div className={s.list_product_phone}></div>
                         </div>
                     </div>
