@@ -11,8 +11,6 @@ function Home() {
                     <Sidebar />
 
                     <div className={s.col_lg_9}>
-                        <div className={s.carousel}></div>
-
                         <ul className={s.d_flex}>
                             <li className={s.text_center}>
                                 <a href="">
@@ -55,14 +53,11 @@ function Home() {
                             </li>
                         </ul>
 
-                        <div className={s.header_title}>
-
-                        </div>
-
                         <div className={s.section}>
                             <h5>Điện thoại 1</h5>
                             <div className={s.list_product_phone}></div>
                         </div>
+
                     </div>
                 </div>
             </div>
