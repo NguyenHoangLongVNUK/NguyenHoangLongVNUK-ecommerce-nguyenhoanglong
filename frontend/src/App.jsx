@@ -1,33 +1,20 @@
-/* eslint-disable no-unused-vars */
-import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { getProducts } from './config/api'
-import Home from './components/Home';
-import ProductList from './components/ProductList';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Card from './components/Card';
+import Home from './components/Home';
+import Product from './components/Product';
 import Header from './components/layout/Header';
-import './styles/global.css'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './styles/global.css';
 function App() {
-  const [count, setCount] = useState(0)
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    getProducts().then(response => {
-      setProducts(response.data);
-    }).catch(error => {
-      console.error('Error fetching products:', error);
-    });
-  }, []);
   return (
     <>
       <Router>
         <div>
           <Header />
-
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/product" element={<ProductList />} />
+            <Route path="/product/:productId" element={<Product />} />
             <Route path="/card" element={<Card />} />
           </Routes>
         </div>

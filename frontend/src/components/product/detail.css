@@ -1,0 +1,250 @@
+nav a {
+    font-size: 14px;
+    color: #333;
+}
+
+nav span {
+    font-size: 13px;
+    color: #666;
+}
+
+.wrapper {
+    min-width: 300px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.wrapper:hover img {
+    cursor: pointer;
+}
+
+.wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper ul li {
+    margin: 6px;
+}
+
+.wrapper ul li:hover {
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+}
+
+.wrapper-img {
+    position: relative;
+
+}
+
+.wrapper-img img {
+    /* width: 260px; */
+    margin-bottom: 30px;
+}
+
+.wrapper .list-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+}
+
+.prev-btn i,
+.next-btn i {
+    padding: 12px;
+    border-radius: 12px;
+    color: rgb(221, 221, 168);
+}
+
+.prev-btn:hover i,
+.next-btn:hover i {
+    color: rgb(142, 138, 138);
+    background: rgb(233, 228, 228);
+    cursor: pointer;
+}
+
+.prev-btn {
+    top: 50%;
+    Transform: translateY(-50%);
+    left: -20px;
+}
+
+.next-btn {
+    top: 50%;
+    Transform: translateY(-50%);
+    right: -20px;
+}
+
+.list-img img {
+    width: 80px;
+    padding: 0;
+}
+
+.thumb-item {
+    opacity: 0.6;
+}
+
+
+.active,
+.thumb-item:hover {
+    opacity: 1;
+}
+
+.wr-info .name-product {
+    border-bottom: 1px solid #ddd;
+}
+
+.wr-info .price {
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.wr-info .desc p {
+    font-size: 15px;
+}
+
+.wr-content {
+    height: 600px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.wr-content p {
+    text-align: justify;
+}
+
+.show-full {
+    height: auto;
+    /* overflow: visible; */
+}
+
+.bg-article {
+    background: linear-gradient(to bottom, rgba(255 255 255/0), rgba(255 255 255/62.5), rgba(255 255 255/1));
+    bottom: 0px;
+    height: 105px;
+    position: absolute;
+    width: 100%;
+}
+
+#watch {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    Transform: translateX(-50%);
+}
+
+#collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-show {
+    min-width: 120px;
+    text-align: center;
+    padding: 4px 32px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #8787ea;
+    color: #9999d6;
+    border-radius: 4px;
+    background: none;
+}
+
+.btn-show:hover {
+    color: #2525ee;
+    border: 1px solid #2525ee;
+    background: #e5e5eb;
+}
+
+.slick-slide {
+    margin: 24px;
+}
+
+.slick-initialized .slick-list {
+    height: 400px;
+}
+
+.slick-initialized .slick-track {
+    /* height: 100px; */
+    top: -20px;
+}
+
+.slick-initialized .slick-dots {
+    display: none !important;
+}
+
+.slick-initialized .slick-prev:before,
+.slick-initialized .slick-next:before {
+    color: #ccc;
+}
+
+.product-sell {
+    text-align: center;
+    border: 1px solid #eee;
+    position: relative;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.product-sell:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: all 1s;
+}
+
+.product-sell .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-sell .sale {
+    max-width: 28%;
+}
+
+.product-sell img.product-img {
+    transition: all 1s;
+}
+
+.product-sell:hover img.product-img {
+    transform: scale(1.12, 1.12);
+}
+
+.product-sell .info a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product-sell .info .discount {
+    font-size: 14px;
+    color: #999;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.product-sell .info .buy-now {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-sell .info .buy-now a {
+    font-size: 10px;
+    color: #eee;
+}
+
+@media (max-width: 768px) {
+    .slick-slide {
+        width: 240px !important;
+    }
+}
