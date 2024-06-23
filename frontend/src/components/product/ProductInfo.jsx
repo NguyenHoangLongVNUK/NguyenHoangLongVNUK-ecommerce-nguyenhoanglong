@@ -67,7 +67,7 @@ const ProductInfo = ({ product, images }) => {
                                 <span className="badge badge-dark">{product.price_money}</span>
                             </p>
                             <div className="d-flex justify-content-center">
-                                <a href={`/card`} className="btn btn-success">Thêm giỏ hàng</a>
+                                <a href={`/cart`} className="btn btn-success">Thêm giỏ hàng</a>
                             </div>
                         </div>
                     </div>

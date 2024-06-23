@@ -11,6 +11,8 @@ function Home() {
                     <Sidebar />
 
                     <div className={s.col_lg_9}>
+                        <div className={s.carousel}></div>
+
                         <ul className={s.d_flex}>
                             <li className={s.text_center}>
                                 <a href="">
@@ -53,9 +55,1040 @@ function Home() {
                             </li>
                         </ul>
 
+                        <div className={s.header_title}>
+
+                        </div>
+
                         <div className={s.section}>
-                            <h5>Điện thoại 1</h5>
-                            <div className={s.list_product_phone}></div>
+                            <h5>Điện thoại</h5>
+                            <div className={s.list_product_phone}>
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={s.section}>
+                            <h5>Máy tính</h5>
+                            <div className={s.list_product_phone}>
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={s.section}>
+                            <h5>Đồng hồ</h5>
+                            <div className={s.list_product_phone}>
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={s.section}>
+                            <h5>Phụ kiện khác</h5>
+                            <div className={s.list_product_phone}>
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={s.col6_responsive}>
+                                    <div className={s.product_sell}>
+                                        <a href="">
+                                            <img src="/Home/iphone.jpg" alt="" />
+                                        </a>
+                                        <div className={s.info}>
+                                            <a href="">
+                                                Iphone 11 64GB
+                                            </a>
+                                            <h6 className={s.price}>15.000.000</h6>
+                                            <div className={s.buy_now}>
+                                                <a href="" className={s.btn_dark}>Thêm giỏ hàng</a>
+                                                <a href="" className={s.btn_danger}>Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
