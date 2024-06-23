@@ -40,7 +40,7 @@ function Header() {
 
                         <div className={styles.col_sm_1}>
                             <a href="">
-                                <img src="public/logoi8.png" alt="" />
+                                <img src="/logoi8.png" alt="" />
                             </a>
                         </div>
 
