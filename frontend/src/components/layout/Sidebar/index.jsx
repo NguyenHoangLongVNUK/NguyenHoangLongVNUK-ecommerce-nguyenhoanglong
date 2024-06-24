@@ -30,6 +30,7 @@ export default function Sidebar() {
                         </a>
                     </li>
                 </ul>
+
             </div>
 
             <div className={s.featured_product}>
