@@ -11,6 +11,7 @@ router.get('/products', (req, res) => {
         if (err) throw err;
         res.json(results);
     });
+    
 });
 
 router.get('/products/:id', (req, res) => {
