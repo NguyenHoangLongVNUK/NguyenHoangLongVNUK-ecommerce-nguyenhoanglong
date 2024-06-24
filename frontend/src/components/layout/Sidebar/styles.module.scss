@@ -699,3 +699,9 @@
         }
     }
 }
+
+@media (min-width: 430px) and (max-width: 991px) {
+    .col_lg_3 {
+        display: none;
+    }
+}

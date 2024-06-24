@@ -30,7 +30,6 @@ export default function Sidebar() {
                         </a>
                     </li>
                 </ul>
-
             </div>
 
             <div className={s.featured_product}>
@@ -222,13 +221,9 @@ export default function Sidebar() {
                 </div>
             </div>
 
-            <img src="/Home/banner1.jpg" alt="" className={s.thumbnail} />
             <img src="/Home/banner2.jpg" alt="" className={s.thumbnail} />
             <img src="/Home/banner3.jpg" alt="" className={s.thumbnail} />
             <img src="/Home/banner4.jpg" alt="" className={s.thumbnail} />
-            <img src="/Home/banner5.jpg" alt="" className={s.thumbnail} />
-            <img src="/Home/banner6.jpg" alt="" className={s.thumbnail} />
-            <img src="/Home/banner7.png" alt="" className={s.thumbnail} />
         </div>
     )
 }

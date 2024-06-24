@@ -38,17 +38,17 @@ function PauseOnHover({ products }) {
     return (
         <div className="slider-container">
             <Slider {...settings}>
-                {products.map(product => (
-                    <div className="bg-white " key={product.idProduct}>
-                        <Link to={`?mod=product&id=${product.idProduct}`} className="p-1">
-                            <img src={`/${product.thumbnail}`} className="product-img" alt="" />
+                {products.map((product, item) => (
+                    <div className="bg-white " key={item}>
+                        <Link to={`?mod=product&id=${product?.id}`} className="p-1">
+                            <img src={`/${product?.image_url}`} className="product-img" alt="" />
                         </Link>
                         <div className="info">
-                            <Link to={`?mod=product&id=${product.idProduct}`}>{product.title}</Link>
-                            <h6 className="price text-danger mt-2">{product.price}</h6>
+                            <Link to={`?mod=product&id=${product?.id}`}>{product?.name}</Link>
+                            <h6 className="price text-danger mt-2">{product?.price}</h6>
                             <div className="buy-now d-flex">
-                                <Link to={`?mod=cart&action=add&id=${product.idProduct}`} className="btn-sm btn-dark mr-2">Thêm giỏ hàng</Link>
-                                <Link to={`?mod=checkout&action=buyNow&id=${product.idProduct}`} className="btn-sm btn-danger">Mua ngay</Link>
+                                <Link to={`?mod=cart&action=add&id=${product?.id}`} className="btn-sm btn-dark mr-2">Thêm giỏ hàng</Link>
+                                <Link to={`?mod=checkout&action=buyNow&id=${product?.id}`} className="btn-sm btn-danger">Mua ngay</Link>
                             </div>
                         </div>
                     </div>

@@ -29,7 +29,6 @@ const Cart = () => {
             discount: 0,
             qty: 2,
             total: 12000
-
         },
         // Thêm các sản phẩm khác vào đây
     ];

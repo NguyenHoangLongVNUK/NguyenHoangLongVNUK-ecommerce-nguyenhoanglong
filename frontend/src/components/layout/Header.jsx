@@ -1,9 +1,25 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {
+    AppstoreOutlined,
+    ContainerOutlined,
+    DesktopOutlined,
+    MailOutlined,
+    MenuFoldOutlined,
+    MenuUnfoldOutlined,
+    PieChartOutlined,
+} from '@ant-design/icons';
+import { Button, Menu } from 'antd';
 import styles from './Header.module.scss'; // Import CSS Module
 
 function Header() {
+    const [collapsed, setCollapsed] = useState(false);
+
+    const toggleCollapsed = () => {
+        setCollapsed(!collapsed);
+    };
+
     return (
         <header className={styles.mb_4}>
 
@@ -72,10 +88,44 @@ function Header() {
                                 <div className={styles.m_0}>Bạn chưa có sản phẩm trong giỏ hàng</div>
                             </div>
                         </div>
+
+                        <div className={styles.col_sm_4}>
+                            <Button type="primary" onClick={toggleCollapsed}>
+                                {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            {collapsed ? (
+                <div className={styles.menu}>
+                    <ul>
+                        <li className={styles.border_bottom}>
+                            <a href="">
+                                Điện thoại
+                            </a>
+                        </li>
+                        <li className={styles.border_bottom}>
+                            <a href="">
+                                Laptop
+                            </a>
+                        </li>
+                        <li className={styles.border_bottom}>
+                            <a href="">
+                                Đồng hồ
+                            </a>
+                        </li>
+                        <li className={styles.border_bottom}>
+                            <a href="">
+                                Phụ kiện
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            ) : (
+                <></>
+            )}
         </header>
     );
 }
