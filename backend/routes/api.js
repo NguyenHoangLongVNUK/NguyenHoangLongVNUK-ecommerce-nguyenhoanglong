@@ -95,7 +95,8 @@ router.get('/products', (req, res) => {
     res.json(results);
   });
 });
-// Chi tiết sp
+
+
 router.get('/products/:id', (req, res) => {
   const productId = req.params.id;
   const productQuery = `
