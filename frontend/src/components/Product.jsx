@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductById, getRelatedProducts } from '../config/api';
 import Sidebar from './layout/Sidebar';
@@ -24,10 +24,10 @@ const ProductPage = () => {
     const fetchData = useCallback(async () => {
         try {
             setLoading(true);
-            const [productResponse, relatedProductsResponse] = await Promise.all([
-                getProductById(productId),
-                getRelatedProducts(productId)
-            ]);
+            const productResponse = await getProductById(productId);
+            const category = productResponse.data.category_id;
+
+            const relatedProductsResponse = await getRelatedProducts(category);
 
             setProductData({
                 product: productResponse.data,
@@ -36,7 +36,7 @@ const ProductPage = () => {
             });
         } catch (error) {
             console.error('Error fetching data:', error);
-            setError('Failed to fetch product data');
+            setError('Lỗi xảy ra khi fetching data');
         } finally {
             setLoading(false);
         }
@@ -46,10 +46,25 @@ const ProductPage = () => {
         fetchData();
     }, [fetchData]);
 
-    if (error) return <div>{error}</div>;
+    if (error) {
+        return (
+            <div id="wrapper-container" className="container">
+                <div className="row">
+                    <Sidebar />
+                    <div className="col-lg-9">
+                        <div className="container mt-4">
+                            <div className="alert alert-danger" role="alert">
+                                {error}
+                                <div>Vui lòng xem lại kết nối be</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     const { product, images, relatedProducts } = productData;
-
     return (
         <div id="wrapper-container" className="container">
             <div className="row">

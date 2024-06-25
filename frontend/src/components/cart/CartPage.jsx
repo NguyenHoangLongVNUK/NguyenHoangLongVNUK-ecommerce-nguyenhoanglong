@@ -1,51 +1,47 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { CartContext } from '../../CartContext';
+import { listCartWithIdsProduct } from '../../config/api';
 import './cart.css';
 
 const CartPage = () => {
-    const cartItems = [
-        {
-            id: 1,
-            thumbnail: 'product1.png',
-            title: 'Sản phẩm 1',
-            price: 100000,
-            discount: 5000,
-            qty: 2,
-            total: 200000
-        },
-        {
-            id: 2,
-            thumbnail: 'product2.png',
-            title: 'Sản phẩm 2',
-            price: 150000,
-            discount: 0,
-            qty: 1,
-            total: 150000
-        },
-        {
-            id: 3,
-            thumbnail: 'product3.png',
-            title: 'Sản phẩm 3',
-            price: 12000,
-            discount: 0,
-            qty: 2,
-            total: 12000
-        },
-    ];
-    const [cart, setCart] = useState(cartItems);
+    const { cart, removeFromCart } = useContext(CartContext);
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchCartProducts = async () => {
+            try {
+                const response = await listCartWithIdsProduct({ ids: cart });
+                const productsWithQty = response.data.map(product => ({
+                    ...product,
+                    qty: 1,
+                    total: (product.price - (product.price * (product.discount / 100)))
+                }));
+                setProducts(productsWithQty);
+            } catch (error) {
+                console.error('Error fetching cart products:', error);
+            }
+        };
+
+        if (cart?.length > 0) {
+            fetchCartProducts();
+        } else {
+            setProducts([]);
+        }
+    }, [cart]);
 
     const handleQuantityChange = (productId, newQty) => {
-        const updatedCart = cart.map(item => {
-            if (item.id === productId) {
-                const newTotal = item.price * newQty;
-                return { ...item, qty: newQty, total: newTotal };
+        const updatedProducts = products.map(product => {
+            if (product.product_id === productId) {
+                const newTotal = (product.price - (product.price * (product.discount / 100))) * newQty;
+                return { ...product, qty: newQty, total: newTotal };
             }
-            return item;
+            return product;
         });
 
-        setCart(updatedCart);
+        setProducts(updatedProducts);
     };
 
-    const totalMoney = cart.reduce((total, product) => total + product.total, 0);
+    const totalMoney = products.reduce((total, product) => total + product.total, 0);
 
     // Định dạng tiền tệ
     const currencyFormat = (value) => {
@@ -64,7 +60,7 @@ const CartPage = () => {
                 </div>
             </nav>
             <div id="wrapper" className="wp-inner clearfix mt-4">
-                {cart.length > 0 ? (
+                {products.length > 0 ? (
                     <div className="section" id="info-cart-wp">
                         <div className="section-detail table-responsive">
                             <div className="table-container">
@@ -74,25 +70,25 @@ const CartPage = () => {
                                             <th>Ảnh sản phẩm</th>
                                             <th>Tên sản phẩm</th>
                                             <th>Giá sản phẩm</th>
-                                            <th>Giảm giá</th>
+                                            <th>Giảm giá (%)</th>
                                             <th>Số lượng</th>
                                             <th>Thành tiền</th>
                                             <th>Xóa</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {cart.map(product => (
-                                            <tr key={product.id}>
+                                        {products.map(product => (
+                                            <tr key={product.product_id}>
                                                 <td>
-                                                    <a href={`?mod=product&id=${product.id}`} title="" className="thumb">
-                                                        <img src={`/${product.thumbnail}`} width="92px" alt="" />
+                                                    <a href={`/product/${product.product_id}`} title="" className="thumb">
+                                                        <img src={`${product.image_url}`} width="92px" alt="" />
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href={`?mod=product&id=${product.id}`} title="" className="name-product text-primary text-decoration-none">{product.title}</a>
+                                                    <a href={`/product/${product.product_id}`} title="" className="name-product text-primary text-decoration-none">{product.name}</a>
                                                 </td>
                                                 <td>{currencyFormat(product.price)}</td>
-                                                <td>{currencyFormat1(product.discount)}</td>
+                                                <td>{product.discount}</td>
                                                 <td>
                                                     <input
                                                         type="number"
@@ -100,17 +96,16 @@ const CartPage = () => {
                                                         min="1"
                                                         max="10"
                                                         id="num-order"
-                                                        data-id={product.id}
                                                         value={product.qty}
                                                         className="num-order"
-                                                        onChange={(e) => handleQuantityChange(product.id, parseInt(e.target.value))}
+                                                        onChange={(e) => handleQuantityChange(product.product_id, parseInt(e.target.value))}
                                                     />
                                                 </td>
-                                                <td id={`total-${product.id}`}>{currencyFormat(product.total)}</td>
+                                                <td id={`total-${product.product_id}`}>{currencyFormat(product.total)}</td>
                                                 <td>
-                                                    <a href={`?mod=cart&action=delete&id=${product.id}`} title="" className="del-product">
+                                                    <button type='button' onClick={() => removeFromCart(product.product_id)} title="" className="del-product">
                                                         <i className="fa-solid fa-trash text-dark"></i>
-                                                    </a>
+                                                    </button>
                                                 </td>
                                             </tr>
                                         ))}
@@ -129,18 +124,12 @@ const CartPage = () => {
                     </div>
                 ) : (
                     <div className="d-flex justify-content-center">
-                        <img src="public/img/empty-cart.png" alt="" />
+                        <img src="/empty-cart.png" alt="Empty Cart" />
                     </div>
                 )}
             </div>
         </div>
     );
-};
-
-// Định dạng giảm giá
-const currencyFormat1 = (value) => {
-    // Thực hiện định dạng giảm giá ở đây (nếu cần)
-    return value; // Cần thay đổi để định dạng theo đúng yêu cầu
 };
 
 export default CartPage;

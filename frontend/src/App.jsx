@@ -6,18 +6,22 @@ import Cart from './components/Cart';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './styles/global.css';
+import { CartProvider } from './CartContext';
 function App() {
   return (
     <>
       <Router>
-        <div>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product/:productId" element={<Product />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </div>
+        <CartProvider>
+          <div>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/:select" element={<Home />} />
+              <Route path="/product/:productId" element={<Product />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </div>
+        </CartProvider>
       </Router>
     </>
   )

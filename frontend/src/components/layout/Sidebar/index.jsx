@@ -10,215 +10,26 @@ export default function Sidebar() {
                 <h5>Danh mục sản phẩm</h5>
                 <ul>
                     <li className={s.border_bottom}>
-                        <a href="">
+                        <a href="/dienthoai">
                             Điện thoại
                         </a>
                     </li>
                     <li className={s.border_bottom}>
-                        <a href="">
+                        <a href="/laptop">
                             Laptop
                         </a>
                     </li>
                     <li className={s.border_bottom}>
-                        <a href="">
+                        <a href="/dongho">
                             Đồng hồ
                         </a>
                     </li>
                     <li className={s.border_bottom}>
-                        <a href="">
+                        <a href="phukien">
                             Phụ kiện
                         </a>
                     </li>
                 </ul>
-            </div>
-
-            <div className={s.featured_product}>
-                <h5>Sản phẩm nổi bật</h5>
-                <div>
-                    <ul className={s.list_unstyled_shadow_sm}>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={s.product}>
-                            <div className={s.d_flex_product}>
-                                <a href="" className={s.thumb}>
-                                    <img src="/lenovo.jpg" alt="" />
-                                </a>
-
-                                <div className={s.info}>
-                                    <a className={s.text_dark} href="">Lenovo_Ideapad 14IML05</a>
-                                    <div className={s.price}>
-                                        <span className={s.text}>14.000.000</span>
-                                    </div>
-                                    <div className={s.buy}>
-                                        <a href="">Mua ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
             </div>
 
             <img src="/Home/banner2.jpg" alt="" className={s.thumbnail} />

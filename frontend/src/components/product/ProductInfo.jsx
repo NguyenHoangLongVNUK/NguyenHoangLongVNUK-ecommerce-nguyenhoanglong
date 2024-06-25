@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { CartContext } from '../../CartContext';
 
 const ProductInfo = ({ product, images }) => {
+    const { addToCart } = useContext(CartContext);
     const [selectedImage, setSelectedImage] = useState(images[0]?.thumbnail);
     const [selectedImageId, setSelectedImageId] = useState(images[0]?.id);
     const handleThumbnailClick = (thumbnail, id) => {
@@ -25,6 +27,9 @@ const ProductInfo = ({ product, images }) => {
             setSelectedImageId(nextImage?.id);
         }
     };
+    const currencyFormat = (value) => {
+        return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
+    };
 
     return (
         <div className="wr-info-product mt-4">
@@ -34,7 +39,7 @@ const ProductInfo = ({ product, images }) => {
                     <div className="col-md-6">
                         <div className="wrapper">
                             <div className="wrapper-img">
-                                <img src={`/${selectedImage ? selectedImage : images[0]?.thumbnail}`} id="zoom" width="250px" alt="" />
+                                <img src={`${selectedImage ? selectedImage : product?.image_url}`} id="zoom" width="250px" alt="" />
                                 <div className="prev-btn" onClick={handlePrevClick} style={{ opacity: images?.findIndex(img => img?.id === selectedImageId) === 0 ? 0.5 : 1 }}>
                                     <i className="fa-solid fa-angle-left"></i>
                                 </div>
@@ -49,7 +54,7 @@ const ProductInfo = ({ product, images }) => {
                                         key={img?.id}
                                         onClick={() => handleThumbnailClick(img?.thumbnail, img?.id)}
                                     >
-                                        <img src={`/${img?.thumbnail}`} className="img-thumbnail" alt="" />
+                                        <img src={`${img?.thumbnail}`} className="img-thumbnail" alt="" />
                                     </li>
                                 ))}
                             </ul>
@@ -62,10 +67,10 @@ const ProductInfo = ({ product, images }) => {
                                 <div dangerouslySetInnerHTML={{ __html: product?.desc_detail }} />
                             </small>
                             <p className="price mt-3 ml-5 text-danger">Giá thành:
-                                <span className="badge badge-dark">{product?.price}</span>
+                                <span className="badge badge-dark">{currencyFormat(product?.price)}</span>
                             </p>
                             <div className="d-flex justify-content-center">
-                                <a href={`/cart`} className="btn btn-success">Thêm giỏ hàng</a>
+                                <a href={`/cart`} className="btn btn-success" onClick={() => addToCart(product.product_id)}>Thêm giỏ hàng</a>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ const Breadcrumb = ({ product }) => {
                 <i className="fa-solid fa-house mr-2"></i>Trang chủ
             </Link>
             <span className="breadcrumb-separator"> &raquo;</span>
-            <Link to={`/product/${product?.id}`} className="breadcrumb-link">
+            <Link to={`/`} className="breadcrumb-link">
                 {product?.category_name}
             </Link>
             <span className="breadcrumb-separator"> &raquo;</span>

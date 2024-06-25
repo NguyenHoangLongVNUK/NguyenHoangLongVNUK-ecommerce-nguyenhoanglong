@@ -40,15 +40,15 @@ function PauseOnHover({ products }) {
             <Slider {...settings}>
                 {products.map((product, item) => (
                     <div className="bg-white " key={item}>
-                        <Link to={`?mod=product&id=${product?.id}`} className="p-1">
-                            <img src={`/${product?.image_url}`} className="product-img" alt="" />
+                        <Link to={`/product/${product?.product_id}`} className="p-1">
+                            <img src={`${product?.image_url}`} className="product-img" alt="" />
                         </Link>
                         <div className="info">
-                            <Link to={`?mod=product&id=${product?.id}`}>{product?.name}</Link>
+                            <Link to={`/product/${product?.product_id}`}>{product?.name}</Link>
                             <h6 className="price text-danger mt-2">{product?.price}</h6>
                             <div className="buy-now d-flex">
-                                <Link to={`?mod=cart&action=add&id=${product?.id}`} className="btn-sm btn-dark mr-2">Thêm giỏ hàng</Link>
-                                <Link to={`?mod=checkout&action=buyNow&id=${product?.id}`} className="btn-sm btn-danger">Mua ngay</Link>
+                                <Link to={`/product/${product?.product_id}`} className="btn-sm btn-dark mr-2">Thêm giỏ hàng</Link>
+                                <Link to={`/product/${product?.product_id}`} className="btn-sm btn-danger">Mua ngay</Link>
                             </div>
                         </div>
                     </div>

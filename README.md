@@ -52,3 +52,25 @@ Dự án này nhằm phát triển một trang web bán hàng trực tuyến v�
 - **Tuần 7**: Tích hợp và kiểm thử.
 - **Tuần 8**: Triển khai và viết tài liệu.
 - **Tuần 9**: Báo cáo và bảo vệ dự án.
+
+## Công nghệ sử dụng
+- **Base**: HTML, CSS, Javascript
+- **FE**: Reactjs, React-router-dom, Slick-carousel, Bootstrap css, Axios, Sass, ...
+- **BE**: Nodejs (express), Mysql2
+- **Database**: Mysql
+- **Server**: Apache
+
+## Tiến hành chạy dự án
+- **1**: Clone source code từ git
+- **2**: Mở source code bằng vs code, và mở terminal, chia đôi terminal Split (Ctrl+Shift+5)
+## FE
+- **3**: Vào thư mục frontend với cú pháp trong terminal bên trái: `cd frontend`
+- **4**: Cài đặt các package cần thiết: `npm i`
+- **5**: Chạy dự án: `npm run dev`, [http://localhost:5173/](http://localhost:5173/)
+## BE:
+- **6**: Tải xampp về để hỗ trợ chạy be bằng mysql: [📦 Download Xampp](https://www.apachefriends.org/download.html)
+- **7**: Nhớ đúng theo thứ tự các bước tránh gặp lỗi không mong muốn (Bắt buộc): `start Apache -> start MySql` và khi tắt thì `stop MySql -> stop Apache`
+- **8**: Tạo database mới có tên `ecommerce_reactjssql` vào [phpMyAdmin](http://localhost/phpmyadmin/index.php), vào phần `Nhập` thực thi trên header của db vừa tạo, kéo file sql lên `ecommerce_reactjssql.sql`
+- **9**: Vào thư mục frontend với cú pháp trong terminal bên phải: `cd backend`
+- **10**: Cài đặt các package cần thiết: `npm i`
+- **11**: Chạy dự án: `npm run dev`, [http://localhost:5000/](http://localhost:5000/)
