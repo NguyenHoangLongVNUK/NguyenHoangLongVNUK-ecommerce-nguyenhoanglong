@@ -14,6 +14,7 @@ router.get('/products', (req, res) => {
     
 });
 
+
 router.get('/products/:id', (req, res) => {
     const productId = req.params.id;
     db.query('SELECT * FROM products WHERE product_id = ?', [productId], (err, results) => {
