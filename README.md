@@ -69,8 +69,8 @@ This project aims to develop an online sales website with main functions includi
 - **5**: Run project: `npm run dev`, [http://localhost:5173/](http://localhost:5173/)
 ## BE:
 - **6**: Download xampp to support running be with mysql: [📦 Download Xampp](https://www.apachefriends.org/download.html)
-- **7**: Remember to follow the correct order of steps to avoid unexpected errors (Required): `start Apache -> start MySql` và khi tắt thì `stop MySql -> stop Apache`
-- **8**: Create a new database named `ecommerce_reactjssql`[phpMyAdmin](http://localhost/phpmyadmin/index.php), vào phần `Nhập` thực thi trên header của db vừa tạo, kéo file sql lên `ecommerce_reactjssql.sql`
+- **7**: Remember to follow the correct order of steps to avoid unexpected errors (Required): `start Apache -> start MySql` and when turned off `stop MySql -> stop Apache`
+- **8**: Create a new database named `ecommerce_reactjssql`[phpMyAdmin](http://localhost/phpmyadmin/index.php), Go to the 'Import' section and execute on the header of the newly created db, pull up the sql file`ecommerce_reactjssql.sql`
 - **9**: Go to the frontend folder with the syntax in the right terminal: `cd backend`
 - **10**:Install necessary packages: `npm i`
 - **11**: Running projects:`npm run dev`, [http://localhost:5000/](http://localhost:5000/)
