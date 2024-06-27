@@ -1,76 +1,76 @@
-## Mô tả Dự án
-Dự án này nhằm phát triển một trang web bán hàng trực tuyến với các chức năng chính bao gồm: hiển thị sản phẩm, giỏ hàng, thanh toán và quản lý đơn hàng. Trang web sẽ có giao diện thân thiện với người dùng và tích hợp các tính năng bảo mật cần thiết.
+## Describe project
+This project aims to develop an online sales website with main functions including: product display, shopping cart, payment and order management. The website will have a user-friendly interface and integrate necessary security features.
 
-## Kế hoạch thực hiện
+## Implementation plan
 
-### 1. Lập kế hoạch và thiết kế
-- **Nghiên cứu yêu cầu**: Thu thập và phân tích yêu cầu từ người dùng và giảng viên.
-- **Lên kế hoạch**: Xác định các chức năng chính của trang web bán hàng và lập kế hoạch phát triển chi tiết.
-- **Thiết kế giao diện người dùng (UI)**: Vẽ wireframe và thiết kế mockup cho các trang chính như trang chủ, trang sản phẩm, trang giỏ hàng, và trang thanh toán.
-- **Thiết kế cơ sở dữ liệu (DB)**: Thiết kế cấu trúc cơ sở dữ liệu để lưu trữ thông tin sản phẩm, đơn hàng, và người dùng.
+### 1. Planning and design
+- **Requirements Research**: Collect and analyze requirements from users and instructors.
+- **Planning**: Determine the main functions of the sales website and create a detailed development plan.
+- **User interface (UI) design**: Draw wireframes and design mockups for main pages such as home page, product page, cart page, and checkout page.
+- **Database (DB) design**: Design database structure to store product, order, and user information.
 
-### 2. Thiết lập môi trường phát triển
-- **Cài đặt công cụ**: Thiết lập các công cụ cần thiết như IDE, version control (Git), các thư viện và framework (ví dụ: React, Node.js, MongoDB).
-- **Khởi tạo dự án**: Tạo dự án mới, khởi tạo kho Git và cài đặt các gói cần thiết.
+### 2. Set up the development environment
+- **Install tools**: Set up necessary tools such as IDE, version control (Git), libraries and frameworks (eg: React, Node.js, MongoDB).
+- **Initiate project**: Create a new project, initialize Git repository and install necessary packages.
 
-### 3. Phát triển Frontend
-- **Trang chủ**: Tạo giao diện trang chủ với danh sách sản phẩm nổi bật và các chương trình khuyến mãi.
-- **Trang sản phẩm**: Tạo giao diện trang chi tiết sản phẩm với thông tin chi tiết, hình ảnh và đánh giá.
-- **Trang giỏ hàng**: Tạo giao diện giỏ hàng cho phép người dùng thêm, xóa và cập nhật số lượng sản phẩm.
-- **Trang thanh toán**: Tạo giao diện thanh toán với các bước nhập thông tin giao hàng và phương thức thanh toán.
+### 3. Frontend Development
+- **Home**: Create a homepage interface with a list of featured products and promotions.
+- **Product page**: Create a product detail page interface with detailed information, images and reviews.
+- **Cart page**: Create a shopping cart interface that allows users to add, delete and update product quantities.
+- **Payment page**: Create a payment interface with steps to enter shipping information and payment methods.
 
-### 4. Phát triển Backend
-- **Thiết lập server**: Thiết lập server với Node.js/Express hoặc một framework tương tự.
-- **API endpoints**: Tạo các API endpoints để xử lý yêu cầu từ frontend (CRUD sản phẩm, quản lý giỏ hàng, xử lý thanh toán).
-- **Kết nối cơ sở dữ liệu**: Thiết lập kết nối với cơ sở dữ liệu (MongoDB, MySQL, v.v.) để lưu trữ và truy xuất dữ liệu sản phẩm và đơn hàng.
-- **Xử lý logic**: Viết các hàm xử lý logic cho các chức năng như thêm, sửa, xóa sản phẩm, quản lý đơn hàng và xác thực người dùng.
+### 4. Backend Development
+- **Set up server**: Set up server with Node.js/Express or a similar framework.
+- **API endpoints**: Create API endpoints to handle requests from the frontend (product CRUD, cart management, payment processing).
+- **Database connection**: Establish a connection to a database (MongoDB, MySQL, etc.) to store and retrieve product and order data.
+- **Logic processing**: Write logic processing functions for functions such as adding, editing, deleting products, order management and user authentication.
 
-### 5. Tích hợp và kiểm thử
-- **Kiểm thử đơn vị (Unit Testing)**: Viết các test case cho từng module và chức năng.
-- **Kiểm thử tích hợp (Integration Testing)**: Kiểm thử sự tương tác giữa các module frontend và backend.
-- **Kiểm thử hệ thống (System Testing)**: Kiểm thử toàn bộ hệ thống để đảm bảo mọi thứ hoạt động như mong đợi.
-- **Sửa lỗi**: Khắc phục các lỗi phát sinh trong quá trình kiểm thử.
+### 5. Integration and testing
+- **Unit Testing**: Write test cases for each module and function.
+- **Integration Testing**: Testing the interaction between frontend and backend modules.
+- **System Testing**: Testing the entire system to ensure everything works as expected.
+- **Error correction**: Fix errors that arise during testing.
 
-### 6. Triển khai
-- **Triển khai trên server**: Đưa trang web lên một server thật (ví dụ: Heroku, Vercel).
-- **Cấu hình domain**: Liên kết domain với server để người dùng có thể truy cập trang web.
-- **Đảm bảo bảo mật**: Thiết lập các biện pháp bảo mật như SSL, bảo vệ API, mã hóa dữ liệu thanh toán.
+### 6. Deployment
+- **Deploy on server**: Put the website on a real server (eg: Heroku, Vercel).
+- **Domain configuration**: Link the domain to the server so users can access the website.
+- **Ensure security**: Set up security measures such as SSL, API protection, payment data encryption.
 
-### 7. Tài liệu và báo cáo
-- **Viết tài liệu**: Soạn thảo tài liệu hướng dẫn sử dụng và cài đặt hệ thống.
-- **Báo cáo dự án**: Viết báo cáo chi tiết về quá trình phát triển và kết quả đạt được.
-- **Chuẩn bị bài thuyết trình**: Chuẩn bị slide và nội dung thuyết trình cho buổi bảo vệ.
+### 7. Documentation and reports
+- **Documentation writing**: Drafting system installation and user manual documents.
+- **Project report**: Write a detailed report on the development process and achieved results.
+- **Preparing presentations**: Prepare slides and presentation content for the defense session.
 
-### 8. Bảo trì và nâng cấp
-- **Bảo trì**: Sửa lỗi và cập nhật trang web sau khi triển khai.
-- **Nâng cấp**: Thêm các tính năng mới và cải thiện hiệu suất dựa trên phản hồi của người dùng.
+### 8. Maintenance and upgrades
+- **Maintenance**: Fix errors and update the website after deployment.
+- **Upgrade**: Add new features and improve performance based on user feedback.
 
-## Tiến độ và phân công
-- **Tuần 1-2**: Lập kế hoạch và thiết kế.
-- **Tuần 3-4**: Thiết lập môi trường và phát triển frontend.
-- **Tuần 5-6**: Phát triển backend.
-- **Tuần 7**: Tích hợp và kiểm thử.
-- **Tuần 8**: Triển khai và viết tài liệu.
-- **Tuần 9**: Báo cáo và bảo vệ dự án.
+## Progress and assignments
+- **Weeks 1-2**: Planning and design.
+- **Week 3-4**: Environment setup and frontend development.
+- **Week 5-6**: Backend development.
+- **Week 7**: Integration and testing.
+- **Week 8**: Deploy and write documents.
+- **Week 9**: Report and defend the project.
 
-## Công nghệ sử dụng
+## Technology used
 - **Base**: HTML, CSS, Javascript
 - **FE**: Reactjs, React-router-dom, Slick-carousel, Bootstrap css, Axios, Sass, ...
 - **BE**: Nodejs (express), Mysql2
 - **Database**: Mysql
 - **Server**: Apache
 
-## Tiến hành chạy dự án
-- **1**: Clone source code từ git
-- **2**: Mở source code bằng vs code, và mở terminal, chia đôi terminal Split (Ctrl+Shift+5)
+## Start running the project
+- **1**: Clone source code from git
+- **2**: Open the source code with vs code, and open the terminal, split the terminal in half(Ctrl+Shift+5)
 ## FE
-- **3**: Vào thư mục frontend với cú pháp trong terminal bên trái: `cd frontend`
-- **4**: Cài đặt các package cần thiết: `npm i`
-- **5**: Chạy dự án: `npm run dev`, [http://localhost:5173/](http://localhost:5173/)
+- **3**:Go to the frontend directory with the syntax in the left terminal: `cd frontend`
+- **4**: Install necessary packages: `npm i`
+- **5**: Run project: `npm run dev`, [http://localhost:5173/](http://localhost:5173/)
 ## BE:
-- **6**: Tải xampp về để hỗ trợ chạy be bằng mysql: [📦 Download Xampp](https://www.apachefriends.org/download.html)
-- **7**: Nhớ đúng theo thứ tự các bước tránh gặp lỗi không mong muốn (Bắt buộc): `start Apache -> start MySql` và khi tắt thì `stop MySql -> stop Apache`
-- **8**: Tạo database mới có tên `ecommerce_reactjssql` vào [phpMyAdmin](http://localhost/phpmyadmin/index.php), vào phần `Nhập` thực thi trên header của db vừa tạo, kéo file sql lên `ecommerce_reactjssql.sql`
-- **9**: Vào thư mục frontend với cú pháp trong terminal bên phải: `cd backend`
-- **10**: Cài đặt các package cần thiết: `npm i`
-- **11**: Chạy dự án: `npm run dev`, [http://localhost:5000/](http://localhost:5000/)
+- **6**: Download xampp to support running be with mysql: [📦 Download Xampp](https://www.apachefriends.org/download.html)
+- **7**: Remember to follow the correct order of steps to avoid unexpected errors (Required): `start Apache -> start MySql` và khi tắt thì `stop MySql -> stop Apache`
+- **8**: Create a new database named `ecommerce_reactjssql`[phpMyAdmin](http://localhost/phpmyadmin/index.php), vào phần `Nhập` thực thi trên header của db vừa tạo, kéo file sql lên `ecommerce_reactjssql.sql`
+- **9**: Go to the frontend folder with the syntax in the right terminal: `cd backend`
+- **10**:Install necessary packages: `npm i`
+- **11**: Running projects:`npm run dev`, [http://localhost:5000/](http://localhost:5000/)
